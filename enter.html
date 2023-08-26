@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="assets/CSS/entet.css">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <script src="main.js" defer></script>
+
+</head>
+
+
+
+    <article class="container">
+        <div class="block">
+
+           <section class="block__item block-item">
+
+               <h2 class="block_item_title">У вас уже есть аккаунт?</h2>
+               <button class="block_item_btn signin-btn" >Войти</button>
+
+           </section>
+           <section class="block_item block-item">
+
+               <h2 class="block_item_title">У вас нет аккаунта?</h2>
+               <button class="block_item_btn signup-btn">Зарегестрироваться</button>
+
+           </section>
+
+        </div>
+
+        <!-- форма входа -->
+
+        <div class="form-box">
+            <form id ="tg" class="form form_in">
+                <h3 class="form_title">Вход</h3>
+
+             <p>
+                 <input type="text" class="form_input"  placeholder="Имя Ф.амилия" name="name" required>
+                 </p>
+
+             <p>
+                 <input type="tel" pattern="7-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" class="form_input"  placeholder="7-ххх-ххх-хххх" name="number" required>
+                 </p>
+
+            <p>
+                 <input type="text" class="form_input" placeholder="Какая чистка нужна" required name="comment">
+                 </p>
+   
+               
+
+             <p>
+                 <button type="submit" class="form_btn">Войти</button>
+            </p>
+
+             <p><a href="#" class="form_fogot">восстонавление пароля</a></p>
+                
+            </form>
+
+            <div id = "success" class="alert alert-success" role="alert" style="display: block;"></div>
+
+
+            <!-- форма регистрации -->
+
+            <form action="#" class="form form_up">
+                <h3 class="form_title"  method="post">Зарегестрироваться</h3>
+
+             <p>
+                 <input type="text" class="form_input" placeholder="Логин" name="login">
+                 </p>
+
+            <p>
+                <input type="email" class="form_input" placeholder="Email" name="d121">
+            </p>
+
+             <p>
+                 <input type="password" class="form_input" placeholder="Пароль" name="password">
+                 </p>
+
+                 <p>
+                    <input type="password" class="form_input" placeholder=" Потдвердите Пароль" name="reppassword">
+                    </p>
+
+             <p>
+                 <button class="form_btn form_btn_signup">Войти</button>
+            </p>
+
+             
+                
+            </form>
+
+
+        </div>
+
+
+    </article>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+
+
+</body>
+</html>
